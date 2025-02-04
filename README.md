@@ -1,0 +1,3 @@
+# Unhandled Promise Rejection in Async Node.js Server
+
+This repository demonstrates a common error in Node.js applications: unhandled promise rejections in asynchronous operations.  The `bug.js` file contains code that simulates an asynchronous operation within an HTTP server.  If an error occurs during the asynchronous operation, it's not correctly handled, potentially leading to a server crash or unexpected behavior. The solution, found in `bugSolution.js`, addresses this by using a `try...catch` block to handle any exceptions that may be thrown within the asynchronous function.   This ensures that the server continues to operate even if errors occur during processing.
